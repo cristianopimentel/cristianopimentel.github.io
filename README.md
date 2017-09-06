@@ -1,3 +1,5 @@
+#This is the original README.md file form the TEMPLATE I used to build the site.
+
 #Clean Blog by Start Bootstrap - Jekyll Version
 
 The official Jekyll version of the Clean Blog theme by [Start Bootstrap](http://startbootstrap.com/).

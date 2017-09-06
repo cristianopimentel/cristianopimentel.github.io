@@ -1,36 +1,19 @@
 ---
 layout: page
-description: "A Clean Blog Theme by Start Bootstrap"
+title: "Cristiano Pimentel"
+description: "Software Developer"
+header-img: "img/about-bg.jpg"
 ---
 
-{% for post in paginator.posts %}
-<div class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-        <h2 class="post-title">            {{ post.title }}
-        </h2>
-        {% if post.subtitle %}
-        <h3 class="post-subtitle">
-            {{ post.subtitle }}
-        </h3>
-        {% endif %}
-    </a>
-    <p class="post-meta">Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}</p>
-</div>
-<hr>
-{% endfor %}
-
-<!-- Pager -->
-{% if paginator.total_pages > 1 %}
-<ul class="pager">
-    {% if paginator.previous_page %}
-    <li class="previous">
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-    </li>
-    {% endif %}
-    {% if paginator.next_page %}
-    <li class="next">
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-    </li>
-    {% endif %}
-</ul>
-{% endif %}
+<p>Hi, I'm Cristiano Pimentel and I'm a Software Developer with a passion for building great relationship with customers.</p>
+<p>I believe trust is the ultimate feedback you can receveive from customers and the team.</p>
+<!-- <p>I'm and experienced in coding, coaching and training developers, designing solutions and leading teams.</p> -->
+<p>This is what I've been up to:
+    <ul>
+        <li>building this site! Here is my notes and tasks on <a href="https://trello.com/b/l7ww5vC7" target="_blank">Trello</a></li>
+        <li>finding opportunities to use my recently studying result: I'm now a <a href="https://www.scrum.org/user/275492" target="_blank">Professional Scrum Master</a></li>
+        <li>keeping up with my <a href="https://trello.com/b/8M1UFnoE" target="_blank">Learning Path</a></li>
+        <li>trying to master the <a href="https://cirillocompany.de/pages/pomodoro-technique" target="_blank">Pomodoro Technique</a> for Focus =)</li>
+    </ul>
+</p>
+<p>Do you need help with your project? Check my <a href="/projects">Projects</a> and <a href="/resume">Resume</a>. Perhaps you can consider <a href="/contact">hiring me</a>.</p>

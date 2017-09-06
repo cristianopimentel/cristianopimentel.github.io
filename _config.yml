@@ -9,7 +9,13 @@ url: "http://yourdomain.com"
 twitter_username: 
 github_username:  cristianopimentel
 facebook_username:  cristiano.pimentel
-email_username:  your-email@yourdomain.com
+email_username:  cristiano.pimentel@hotmail.com
+deezer_profile: 843652197  
+trello_username: cpimentel
+skype: cristiano.pimentel
+
+# Paginator
+paginate_path: "blog/page:num"
 
 # Google Analytics
 # To enable google analytics, uncomment below line with a valid Google Tracking ID
