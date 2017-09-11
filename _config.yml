@@ -1,16 +1,20 @@
 # Site settings
-title: [cristianopimentel.live]
-header-img: img/home-bg.jpg
+title: [Cristiano Pimentel]
+header-img: img/default.png
 email: cristiano.pimentel@hotmail.com
 copyright_name: Cristiano Pimentel
-description: "A Trust builder and Code Crafstman Software Engineer. Trust is the ultimate feedback!"
+description: "I'm a Trust builder and Code Crafstman Software Engineer. Trust is the ultimate feedback!"
 baseurl: ""
 url: "http://cristianopimentel.live"
+
+profile_name: Cristiano Pimentel
+profile_title: Software Engineer
+profile_image: img/profile.jpg
+
 twitter_username: 
 github_username:  cristianopimentel
 facebook_username:  cristiano.pimentel
 email_username:  cristiano.pimentel@hotmail.com
-deezer_profile: 843652197  
 trello_username: cpimentel
 skype: cristiano.pimentel
 

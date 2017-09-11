@@ -5,15 +5,21 @@
 
 body {
 	.sans-serif;
-	font-size: 20px;
-	color: @gray-dark;
+	font-size: 14px;
+	color: @brand-color-gray-dark;
+	@media only screen and (min-width: 768px) {
+		font-size: 18px;
+	}
 }
 
 // -- Typography
 
 p {
 	line-height: 1.5;
-	margin: 30px 0;
+	margin: 15px 0;
+	@media only screen and (min-width: 768px) {
+		margin: 30px 0;
+	}
 }
 
 h1,
@@ -27,10 +33,10 @@ h6 {
 }
 
 a {
-	color: @brand-primary;
+	color: @brand-color-default;
 	&:hover,
 	&:focus {
-		color: @brand-primary;
+		color: @brand-color-default;
 	}
 }
 
@@ -42,8 +48,13 @@ a img {
 }
 
 blockquote {
-	color: @gray;
+	color: @brand-color-gray;
 	font-style: italic;
+}
+
+hr {
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 
 hr.small {
@@ -56,7 +67,7 @@ hr.small {
 // Navigation
 
 .navbar-custom {
-	background: white;
+	background: @brand-color-gray-light;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -68,6 +79,7 @@ hr.small {
 	}
 	.nav {
 		li {
+			text-align: right;
 			a {
 				text-transform: uppercase;
 				font-size: 12px;
@@ -80,11 +92,11 @@ hr.small {
 		background: transparent;
 		border-bottom: 1px solid transparent;
 		.navbar-brand {
-			color: white;
+			color: @brand-color-gray-light;
 			padding: 20px;
 			&:hover,
 			&:focus {
-				color: @white-faded;
+				color: @brand-color-gray-light;
 			}
 		}
 		.nav {
@@ -94,7 +106,7 @@ hr.small {
 					padding: 20px;
 					&:hover,
 					&:focus {
-						color: @white-faded;
+						color: @brand-color-gray-light;
 					}
 				}
 			}
@@ -116,25 +128,25 @@ hr.small {
 			/* when the user scrolls down, we hide the header right above the viewport */
 			position: fixed;
 			top: -61px;
-			background-color: fade(white, 90%);
-			border-bottom: 1px solid darken(white, 5%);
+			background-color: fade(@brand-color-gray, 90%);
+			border-bottom: 1px solid darken(@brand-color-gray, 5%);
 			-webkit-transition: -webkit-transform 0.3s;
 			-moz-transition: -moz-transform 0.3s;
 			transition: transform 0.3s;
 			.navbar-brand {
-				color: @gray-dark;
+				color: @brand-color-gray-dark;
 				&:hover,
 				&:focus {
-					color: @brand-primary;
+					color: @brand-color-default;
 				}
 			}
 			.nav {
 				li {
 					a {
-						color: @gray-dark;
+						color: @brand-color-gray-dark;
 						&:hover,
 						&:focus {
-							color: @brand-primary;
+							color: @brand-color-default;
 						}
 					}
 				}
@@ -155,18 +167,19 @@ hr.small {
 
 .intro-header {
 	background: no-repeat center center;
-	background-color: @gray;
+	background-color: @brand-color-blue;
+	background-size: cover;
+	background-position: center;
 	background-attachment: scroll;
 	.background-cover;
 	// NOTE: Background images are set within the HTML using inline CSS!
-	//margin-bottom: 50px;
 	.site-heading,
 	.post-heading,
 	.page-heading {
-		padding: 100px 0 50px;
+		padding: 80px 0 20px;
 		color: white;
 		@media only screen and (min-width: 768px) {
-			padding: 150px 0;
+			padding: 80px 0 40px;	
 		}
 	}
 	.site-heading,
@@ -174,10 +187,10 @@ hr.small {
 		text-align: center;
 		h1 {
 			margin-top: 0;
-			font-size: 50px;
+			font-size: 36px;
 		}
 		.subheading {
-			font-size: 24px;
+			font-size: 20px;
 			line-height: 1.1;
 			display: block;
 			.sans-serif;
@@ -186,7 +199,7 @@ hr.small {
 		}
 		@media only screen and (min-width: 768px) {
 			h1 {
-				font-size: 80px;
+				font-size: 60px;
 			}
 		}
 	}
@@ -229,11 +242,11 @@ hr.small {
 
 .post-preview {
 	> a {
-		color: @gray-dark;
+		color: @brand-color-gray-dark;
 		&:hover,
 		&:focus {
 			text-decoration: none;
-			color: @brand-primary;
+			color: @brand-color-default;
 		}
 		> .post-title {
 			font-size: 30px;
@@ -247,16 +260,16 @@ hr.small {
 		}
 	}
 	> .post-meta {
-		color: @gray;
+		color: @brand-color-gray;
 		font-size: 18px;
 		font-style: italic;
 		margin-top: 0;
 		> a {
 			text-decoration: none;
-			color: @gray-dark;
+			color: @brand-color-gray-dark;
 			&:hover,
 			&:focus {
-				color: @brand-primary;
+				color: @brand-color-default;
 				text-decoration: underline;
 			}
 		}
@@ -290,7 +303,10 @@ hr.small {
 }
 
 footer {
-	padding: 30px 0 45px;
+	padding: 15px 0 23px;
+	@media only screen and (min-width: 768px) {
+		padding: 30px 0 45px;
+	}
 	.list-inline {
 		margin: 0;
 		padding: 0;
@@ -309,7 +325,7 @@ footer {
 	position: relative;
 	margin-bottom: 0;
 	padding-bottom: 0.5em;
-	border-bottom: 1px solid @gray-light;
+	border-bottom: 1px solid @brand-color-gray-light;
 	input,
 	textarea {
 		z-index: 1;
@@ -341,7 +357,7 @@ footer {
 	}
 	&::not(:first-child) {
 		padding-left: 14px;
-		border-left: 1px solid @gray-light;
+		border-left: 1px solid @brand-color-gray-light;
 	}
 }
 
@@ -354,12 +370,12 @@ footer {
 
 .floating-label-form-group-with-focus {
 	label {
-		color: @brand-primary;
+		color: @brand-color-default;
 	}
 }
 
 form .row:first-child .floating-label-form-group {
-	border-top: 1px solid @gray-light;
+	border-top: 1px solid @brand-color-gray-light;
 }
 
 // Button Styles
@@ -382,8 +398,8 @@ form .row:first-child .floating-label-form-group {
 .btn-default {
 	&:hover,
 	&:focus {
-		background-color: @brand-primary;
-		border: 1px solid @brand-primary;
+		background-color: @brand-color-default;
+		border: 1px solid @brand-color-default;
 		color: white;
 	}
 }
@@ -414,8 +430,8 @@ form .row:first-child .floating-label-form-group {
 		> a:hover,
 		> a:focus {
 			color: white;
-			background-color: @brand-primary;
-			border: 1px solid @brand-primary;
+			background-color: @brand-color-default;
+			border: 1px solid @brand-color-default;
 		}
 	}
 
@@ -424,8 +440,8 @@ form .row:first-child .floating-label-form-group {
 		> a:hover,
 		> a:focus,
 		> span {
-			color: @gray;
-			background-color: @gray-dark;
+			color: @brand-color-gray;
+			background-color: @brand-color-gray-dark;
 			cursor: not-allowed;
 		}
 	}
@@ -436,13 +452,13 @@ form .row:first-child .floating-label-form-group {
 ::-moz-selection {
 	color: white;
 	text-shadow: none;
-	background: @brand-primary;
+	background: @brand-color-default;
 }
 
 ::selection {
 	color: white;
 	text-shadow: none;
-	background: @brand-primary;
+	background: @brand-color-default;
 }
 
 img::selection {
@@ -456,5 +472,56 @@ img::-moz-selection {
 }
 
 body {
-	webkit-tap-highlight-color: @brand-primary;
+	webkit-tap-highlight-color: @brand-color-default;
+}
+
+.profile {
+	display: flex; 
+	align-items: center;
+	.subheading {
+		@media only screen and (min-width: 768px) {
+			padding-left: 3px;
+			text-align: left;
+		}
+	}
+	a {
+		display:block;
+		&:hover,
+		&:focus {
+			color: transparent;
+		}
+	}
+}
+
+.profile-image {
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	width: 100px; 
+	height: 100px; 
+	border-radius: 10%;
+	margin-right: 30px;
+	display: none;
+	@media only screen and (min-width: 768px) {
+		display: inherit;
+	}
+}
+
+.profile-image-small {
+	background-size: 34px 34px;
+	width: 34px; 
+	height: 34px;
+	margin-left: 15px;
+	margin-right: 0px;
+	display: inherit;
+	@media only screen and (min-width: 768px) {
+		margin-top: 10px;
+		margin-left: 5px;
+		margin-right: 15px;
+	}
+}
+
+.profile-image-small-hide {
+	@media only screen and (min-width: 768px) {
+		visibility: hidden;
+	}
 }

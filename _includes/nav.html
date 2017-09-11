@@ -9,14 +9,23 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.title }}</a>
+            <div class="profile">
+                <a href="{{ site.baseurl }}/">
+                    <div class="profile-image profile-image-small {% if page.hide_navbar_title %} profile-image-small-hide {% endif %}" style="background-image: url('{{ site.baseurl }}/{{ site.profile_image }}')">
+                        &nbsp;
+                    </div>
+                    <div>
+                        <a class="navbar-brand" href="{{ site.baseurl }}/">{% unless page.hide_navbar_title %}{{ site.profile_name }}{% endunless %}</a>
+                    </div>
+                </a>
+            </div>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href="{{ site.baseurl }}/">About</a>
+                    <a href="/about">About</a>
                 </li>
                 <!--
                 <li>

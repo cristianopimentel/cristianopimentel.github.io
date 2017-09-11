@@ -1,4 +1,6 @@
 <!-- Footer -->
+<hr>
+
 <footer>
     <div class="container">
         <div class="row">
@@ -52,16 +54,6 @@
                         </a>
                     </li>
                     {% endif %}
-                    {% if site.deezer_profile %}
-                    <li>
-                        <a href="https://www.deezer.com/profile/{{ site.deezer_profile }}" target="_blank">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-square fa-stack-2x"></i>
-                                <i class="fa fa-music fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                    {% endif %}
                     {% if site.facebook_username %}
                     <li>
                         <a href="https://www.facebook.com/{{ site.facebook_username }}" target="_blank">
@@ -84,8 +76,9 @@
                     {% endif %}
                 </ul>
                 <p class="copyright text-muted">
-                    Copyright &copy; {{ site.copyright_name }} {{ site.time | date: '%Y' }}<br />
-                    This site is based on the awesome <a href="https://github.com/BlackrockDigital/startbootstrap-clean-blog-jekyll">Clean Blog theme by Start Bootstrap</a></p>
+                    This site is based on the awesome <a href="https://github.com/BlackrockDigital/startbootstrap-clean-blog-jekyll">Clean Blog theme by Start Bootstrap</a>.<br />
+                    Copyright &copy; cristiano.pimentel@hotmail.com.
+                </p>
             </div>
         </div>
     </div>

@@ -4,14 +4,26 @@
  * Licensed under MIT (https://spdx.org/licenses/MIT)
  */
 
+/* Coolors Exported Palette - coolors.co/d3d4d9-4b88a2-bb0a21-252627-fff9fb */
+/* RGB */
 body {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 20px;
-  color: #404040;
+  font-size: 14px;
+  color: #252627;
+}
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
 }
 p {
   line-height: 1.5;
-  margin: 30px 0;
+  margin: 15px 0;
+}
+@media only screen and (min-width: 768px) {
+  p {
+    margin: 30px 0;
+  }
 }
 h1,
 h2,
@@ -23,19 +35,23 @@ h6 {
   font-weight: 800;
 }
 a {
-  color: #9933ff;
+  color: #7a28cb;
 }
 a:hover,
 a:focus {
-  color: #9933ff;
+  color: #7a28cb;
 }
 a img:hover,
 a img:focus {
   cursor: zoom-in;
 }
 blockquote {
-  color: #808080;
+  color: #d3d4d9;
   font-style: italic;
+}
+hr {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 hr.small {
   max-width: 100px;
@@ -44,7 +60,7 @@ hr.small {
   border-color: white;
 }
 .navbar-custom {
-  background: white;
+  background: #fff9fb;
   position: absolute;
   top: 0;
   left: 0;
@@ -54,6 +70,9 @@ hr.small {
 }
 .navbar-custom .navbar-brand {
   font-weight: 800;
+}
+.navbar-custom .nav li {
+  text-align: right;
 }
 .navbar-custom .nav li a {
   text-transform: uppercase;
@@ -67,12 +86,12 @@ hr.small {
     border-bottom: 1px solid transparent;
   }
   .navbar-custom .navbar-brand {
-    color: white;
+    color: #fff9fb;
     padding: 20px;
   }
   .navbar-custom .navbar-brand:hover,
   .navbar-custom .navbar-brand:focus {
-    color: rgba(255, 255, 255, 0.8);
+    color: #fff9fb;
   }
   .navbar-custom .nav li a {
     color: white;
@@ -80,7 +99,7 @@ hr.small {
   }
   .navbar-custom .nav li a:hover,
   .navbar-custom .nav li a:focus {
-    color: rgba(255, 255, 255, 0.8);
+    color: #fff9fb;
   }
 }
 @media only screen and (min-width: 1170px) {
@@ -101,25 +120,25 @@ hr.small {
     /* when the user scrolls down, we hide the header right above the viewport */
     position: fixed;
     top: -61px;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-bottom: 1px solid #f2f2f2;
+    background-color: rgba(211, 212, 217, 0.9);
+    border-bottom: 1px solid #c5c7cd;
     -webkit-transition: -webkit-transform 0.3s;
     -moz-transition: -moz-transform 0.3s;
     transition: transform 0.3s;
   }
   .navbar-custom.is-fixed .navbar-brand {
-    color: #404040;
+    color: #252627;
   }
   .navbar-custom.is-fixed .navbar-brand:hover,
   .navbar-custom.is-fixed .navbar-brand:focus {
-    color: #9933ff;
+    color: #7a28cb;
   }
   .navbar-custom.is-fixed .nav li a {
-    color: #404040;
+    color: #252627;
   }
   .navbar-custom.is-fixed .nav li a:hover,
   .navbar-custom.is-fixed .nav li a:focus {
-    color: #9933ff;
+    color: #7a28cb;
   }
   .navbar-custom.is-visible {
     /* if the user changes the scrolling direction, we show the header */
@@ -132,7 +151,8 @@ hr.small {
 }
 .intro-header {
   background: no-repeat center center;
-  background-color: #808080;
+  background-color: #4b88a2;
+  background-position: center;
   background-attachment: scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -142,14 +162,14 @@ hr.small {
 .intro-header .site-heading,
 .intro-header .post-heading,
 .intro-header .page-heading {
-  padding: 100px 0 50px;
+  padding: 80px 0 20px;
   color: white;
 }
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading,
   .intro-header .post-heading,
   .intro-header .page-heading {
-    padding: 150px 0;
+    padding: 80px 0 40px;
   }
 }
 .intro-header .site-heading,
@@ -159,11 +179,11 @@ hr.small {
 .intro-header .site-heading h1,
 .intro-header .page-heading h1 {
   margin-top: 0;
-  font-size: 50px;
+  font-size: 36px;
 }
 .intro-header .site-heading .subheading,
 .intro-header .page-heading .subheading {
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1.1;
   display: block;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -173,7 +193,7 @@ hr.small {
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading h1,
   .intro-header .page-heading h1 {
-    font-size: 80px;
+    font-size: 60px;
   }
 }
 .intro-header .post-heading h1 {
@@ -208,12 +228,12 @@ hr.small {
   }
 }
 .post-preview > a {
-  color: #404040;
+  color: #252627;
 }
 .post-preview > a:hover,
 .post-preview > a:focus {
   text-decoration: none;
-  color: #9933ff;
+  color: #7a28cb;
 }
 .post-preview > a > .post-title {
   font-size: 30px;
@@ -226,18 +246,18 @@ hr.small {
   margin-bottom: 10px;
 }
 .post-preview > .post-meta {
-  color: #808080;
+  color: #d3d4d9;
   font-size: 18px;
   font-style: italic;
   margin-top: 0;
 }
 .post-preview > .post-meta > a {
   text-decoration: none;
-  color: #404040;
+  color: #252627;
 }
 .post-preview > .post-meta > a:hover,
 .post-preview > .post-meta > a:focus {
-  color: #9933ff;
+  color: #7a28cb;
   text-decoration: underline;
 }
 @media only screen and (min-width: 768px) {
@@ -261,7 +281,12 @@ hr.small {
   border-bottom-left-radius: 5px;
 }
 footer {
-  padding: 30px 0 45px;
+  padding: 15px 0 23px;
+}
+@media only screen and (min-width: 768px) {
+  footer {
+    padding: 30px 0 45px;
+  }
 }
 footer .list-inline {
   margin: 0;
@@ -277,7 +302,7 @@ footer .copyright {
   position: relative;
   margin-bottom: 0;
   padding-bottom: 0.5em;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid #fff9fb;
 }
 .floating-label-form-group input,
 .floating-label-form-group textarea {
@@ -310,17 +335,17 @@ footer .copyright {
 }
 .floating-label-form-group::not(:first-child) {
   padding-left: 14px;
-  border-left: 1px solid #eeeeee;
+  border-left: 1px solid #fff9fb;
 }
 .floating-label-form-group-with-value label {
   top: 0;
   opacity: 1;
 }
 .floating-label-form-group-with-focus label {
-  color: #9933ff;
+  color: #7a28cb;
 }
 form .row:first-child .floating-label-form-group {
-  border-top: 1px solid #eeeeee;
+  border-top: 1px solid #fff9fb;
 }
 .btn {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -337,8 +362,8 @@ form .row:first-child .floating-label-form-group {
 }
 .btn-default:hover,
 .btn-default:focus {
-  background-color: #9933ff;
-  border: 1px solid #9933ff;
+  background-color: #7a28cb;
+  border: 1px solid #7a28cb;
   color: white;
 }
 .pager {
@@ -365,26 +390,26 @@ form .row:first-child .floating-label-form-group {
 .pager li > a:hover,
 .pager li > a:focus {
   color: white;
-  background-color: #9933ff;
-  border: 1px solid #9933ff;
+  background-color: #7a28cb;
+  border: 1px solid #7a28cb;
 }
 .pager .disabled > a,
 .pager .disabled > a:hover,
 .pager .disabled > a:focus,
 .pager .disabled > span {
-  color: #808080;
-  background-color: #404040;
+  color: #d3d4d9;
+  background-color: #252627;
   cursor: not-allowed;
 }
 ::-moz-selection {
   color: white;
   text-shadow: none;
-  background: #9933ff;
+  background: #7a28cb;
 }
 ::selection {
   color: white;
   text-shadow: none;
-  background: #9933ff;
+  background: #7a28cb;
 }
 img::selection {
   color: white;
@@ -395,5 +420,56 @@ img::-moz-selection {
   background: transparent;
 }
 body {
-  webkit-tap-highlight-color: #9933ff;
+  webkit-tap-highlight-color: #7a28cb;
+}
+.profile {
+  display: flex;
+  align-items: center;
+}
+@media only screen and (min-width: 768px) {
+  .profile .subheading {
+    padding-left: 3px;
+    text-align: left;
+  }
+}
+.profile a {
+  display: block;
+}
+.profile a:hover,
+.profile a:focus {
+  color: transparent;
+}
+.profile-image {
+  background-repeat: no-repeat;
+  background-size: 100px 100px;
+  width: 100px;
+  height: 100px;
+  border-radius: 10%;
+  margin-right: 30px;
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  .profile-image {
+    display: inherit;
+  }
+}
+.profile-image-small {
+  background-size: 34px 34px;
+  width: 34px;
+  height: 34px;
+  margin-left: 15px;
+  margin-right: 0px;
+  display: inherit;
+}
+@media only screen and (min-width: 768px) {
+  .profile-image-small {
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 15px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .profile-image-small-hide {
+    visibility: hidden;
+  }
 }

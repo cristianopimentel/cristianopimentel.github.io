@@ -1,0 +1,12 @@
+---
+layout:     post
+title:      "Soon..."
+subtitle:   "this blog will be ready and filled with some neat stuff... check in a few days ;)"
+date:       2017-09-09 01:00:00
+author:     "cristiano.pimentel"
+header-img: "blog/tea"
+---
+
+Come back in a few days.. there will be plenty of stuff here!
+
+I promiss!
