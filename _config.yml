@@ -1,35 +1,18 @@
-# Site settings
-title: [Cristiano Pimentel]
-header-img: img/default.png
-email: cristiano.pimentel@hotmail.com
-copyright_name: Cristiano Pimentel
-description: "I'm a Trust builder and Code Crafstman Software Engineer. Trust is the ultimate feedback!"
-baseurl: ""
-url: "http://cristianopimentel.live"
+title:             [Cristiano Pimentel]
+email:             cristiano.pimentel@hotmail.com
+description:       A web version of Cristiano Pimentel
+author:            Cristiano Pimentel
+baseurl:           ""
+url:               "http://cris.live"
 
-profile_name: Cristiano Pimentel
-profile_title: Software Engineer
-profile_image: img/profile.jpg
-
-twitter_username: 
-github_username:  cristianopimentel
-facebook_username:  cristiano.pimentel
-email_username:  cristiano.pimentel@hotmail.com
-trello_username: cpimentel
-skype: cristiano.pimentel
-
-# Paginator
-paginate_path: "blog/page:num"
-
-# Google Analytics
-# To enable google analytics, uncomment below line with a valid Google Tracking ID
-# google_tracking_id:
+# Social Profiles
+linkedin_username: cpimentel
+github_username:   cristianopimentel
 
 # Build settings
-markdown: kramdown
-highlighter: rouge
-permalink: pretty
-paginate: 5
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
-
-gems: [jekyll-paginate, jekyll-feed]
+markdown:          kramdown
+paginate:          5
+paginate_path:     "/posts/page:num/"
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
