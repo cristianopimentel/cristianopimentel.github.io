@@ -31,9 +31,9 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
 
-icons_done: <span class="text-success fa fa-check-square-o"></span>&nbsp;
-icons_doing: <span class="text-primary fa fa-hand-spock-o"></span>&nbsp;
-icons_todo: <span class="fa fa-square-o"></span>&nbsp;
+icons_done: <span class="text-success fa fa-check-square-o" title="Done"></span>&nbsp;
+icons_doing: <span class="text-primary fa fa-hand-spock-o" title="Working on it..."></span>&nbsp;
+icons_todo: <span class="fa fa-square-o" title="To Do"></span>&nbsp;
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
