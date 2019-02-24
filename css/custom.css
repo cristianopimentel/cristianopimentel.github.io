@@ -1,0 +1,9 @@
+.presentation {
+  text-align: left;
+}
+#about .lead {
+  font-family: "montserrat-regular", sans-serif;
+  font-size: 22px;
+  line-height: 1.833;
+  color: #2e383f;
+}
