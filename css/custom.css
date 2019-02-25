@@ -29,6 +29,7 @@
  @media only screen and (max-width: 1024px) {
   #home {
     background-position: 30% bottom;
+    background-repeat: scroll;
   }
   .section-intro h1 {
     font-size: 4.4rem;
