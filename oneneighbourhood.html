@@ -24,7 +24,7 @@
 
 <script>
     const fileId = "1lHQRJ8xX0tYF5CRL9CsI4kiyLV4S81hcFljzkYUri1g";
-    const resultElement = "gdrive_content";
+    const resultElementId = "gdrive_content";
     const URL = "https://docs.google.com/document/d/" + fileId + "/export?format=txt";
 
     var rawFile = new XMLHttpRequest();
@@ -35,7 +35,7 @@
             if(rawFile.status === 200 || rawFile.status === 0)
             {
                 var allText = rawFile.responseText;
-                var elementResult = document.getElementById(resultElement);
+                var elementResult = document.getElementById(resultElementId);
                 elementResult.innerText = allText;
             }
         }
