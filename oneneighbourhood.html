@@ -23,12 +23,14 @@
 </body>
 
 <script>
+    //  HERE IS THE CODE
+    //  fileID is the ID from the Google Drive share link
     const fileId = "1lHQRJ8xX0tYF5CRL9CsI4kiyLV4S81hcFljzkYUri1g";
+    //  resultElementId is the ID attribute where you want to write the file content
     const resultElementId = "gdrive_content";
     const URL = "https://docs.google.com/document/d/" + fileId + "/export?format=txt";
 
     var rawFile = new XMLHttpRequest();
-    rawFile.responseType = "json";
     rawFile.open("GET", URL, false);
     rawFile.onreadystatechange = function() {
         if(rawFile.readyState === 4) {
