@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Example for oneneighbourhood</title>
+</head>
+
+<body>
+
+    <div>This is an example how to read data from a file in Google Drive</div>
+    <div>
+        <p>To make it work, you need to create a document and share it with everyone that can have the link and with the no sign-in option. This is show when you click "Advanced" when sharing the file. The permission MUST BE VIEW ONLY! You don't want people to checking your code and editing the file.</p>
+
+        <p>You will get a link like this one: https://docs.google.com/document/d/<strong>1lHQRJ8xX0tYF5CRL9CsI4kiyLV4S81hcFljzkYUri1g</strong>/edit?usp=sharing</p>
+
+        <p>The information in <strong>BOLD</strong> is the content that you will use as the <strong>fileId</strong> in the script.</p>
+    </div>
+    <div>
+        <p>The content below was filled with information from the share file</p>
+    </div>
+    <div id="gdrive_content">THIS IS NOT THE TEXT</div>
+</body>
+
+<script>
+    const fileId = "1lHQRJ8xX0tYF5CRL9CsI4kiyLV4S81hcFljzkYUri1g";
+    const resultElement = "gdrive_content";
+    const URL = "https://docs.google.com/document/d/" + fileId + "/export?format=txt";
+
+    var rawFile = new XMLHttpRequest();
+    rawFile.responseType = "json";
+    rawFile.open("GET", URL, false);
+    rawFile.onreadystatechange = function() {
+        if(rawFile.readyState === 4) {
+            if(rawFile.status === 200 || rawFile.status === 0)
+            {
+                var allText = rawFile.responseText;
+                var elementResult = document.getElementById(resultElement);
+                elementResult.innerText = allText;
+            }
+        }
+    }
+    rawFile.send(null);
+</script>
+
+</html>
