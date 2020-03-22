@@ -183,16 +183,29 @@
     const URL = "https://docs.google.com/document/d/" + fileId + "/export?format=txt"
     
     console.log('ok');
+		
+var rawFile = new XMLHttpRequest();
+        rawFile.open("GET",URL,false);
+          rawFile.onreadystatechange = function() {
+              if(rawFile.readyState === 4) {
+                  if(rawFile.status === 200 || rawFile.status === 0)
+                  {
+                      var allText = rawFile.responseText;
+                      console.log(allText);
+                  }
+              }
+          }
+          rawFile.send(null);
 
-    $(document).ajax({
-        type: 'POST',
-        crossDomain: true,
-        dataType: 'text/plain',
-        url: URL,
-        success: function(jsondata){
-            console.log('jsondata');
-        }
-    })
+    //$.ajax({
+    //    type: 'POST',
+    //    crossDomain: true,
+    //    dataType: 'text/plain',
+    //    url: URL,
+    //    success: function(jsondata){
+    //        console.log('jsondata');
+    //    }
+    //})
 		</script>
 
 </body>
