@@ -184,8 +184,8 @@
     
     console.log('ok');
 
-    $.ajax({
-        type: 'GET',
+    $(document).ajax({
+        type: 'POST',
         crossDomain: true,
         dataType: 'text/plain',
         url: URL,
